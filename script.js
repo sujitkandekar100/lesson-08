@@ -22,3 +22,13 @@ function comparePrice(product,product1){
     }
 }
 comparePrice(product,product1);
+function isSameProduct(product,product1){
+    if(product.price===product1.price && product.name===product1.price){
+        console.log(product.name+" "+product.price+" "+product1.name+" "+product1.price);
+
+    }
+    else{
+        console.log("not same");
+    }
+}
+isSameProduct(product,product1);
