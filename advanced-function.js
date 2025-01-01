@@ -15,8 +15,14 @@ setTimeout(()=>{
 const addButton=document.querySelector('.js-button-add-to-cart');
 addButton.addEventListener('click',()=>{
     const message=document.querySelector('.js-paragraph-added-message');
+    let setTiming;
+    if(setTiming){
+        clearTimeout();
+    }
     message.classList.add('css-added-message-show');
-    setTimeout(()=>{
+     const set=setTimeout(()=>{
         message.classList.remove('css-added-message-show');
     },2000);
-})
+    setTiming=set;
+});
+
