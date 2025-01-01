@@ -26,3 +26,6 @@ addButton.addEventListener('click',()=>{
     setTiming=set;
 });
 
+setInterval(()=>{
+document.title='new message';
+},1000)
