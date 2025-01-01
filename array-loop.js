@@ -5,3 +5,17 @@ function array(Array){
 }
 const Array1=[1,-5,6,7,2,0];
 array(Array1);
+
+function countWords(words) {
+    const wordCounts = {};
+
+    for (const word of words) {
+        wordCounts[word] = (wordCounts[word] || 0) + 1;
+    }
+
+    return wordCounts;
+}
+
+const words = ['fig', 'grape', 'grape'];
+const result = countWords(words);
+console.log(result);
