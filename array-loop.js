@@ -35,3 +35,15 @@ function FizzBuzz(num){
 }
 let num=20;
 FizzBuzz(num);
+
+function findIndex(array) {
+    const Counts = {};
+
+    for (const i of array) {
+        Counts[i] =Counts[i] ;
+    }
+
+    return Counts;
+}
+let array12=[1,2,2,5,3,4,4];
+console.log(findIndex(array12));
