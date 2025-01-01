@@ -15,6 +15,14 @@
       <input class="js-input-name" placeholder="Enter your name " size="30"></input>
       <button class="js-button-submit">Submit</button>
       <p class="js-paragraph-name"></p>
+      <input placeholder="Type something" class="js-input"
+      onkeyup="
+        const inputElement = document.querySelector('.js-input');
+        document.querySelector('.js-message')
+          .innerHTML = inputElement.value;
+      ">
+
+      <p class="js-message"></p>
       </body>
       <script src="domscripts.js"></script>
   </body>

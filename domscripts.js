@@ -24,4 +24,11 @@ inputName.addEventListener('Keydown',(event)=>{
         showName();
     }
     
-})
+});
+document.addEventListener('keydown', (event) => {
+    console.log(`Key pressed keydown: ${event.key}`);
+}); // show which key pressed in keyboard.
+
+document.addEventListener('keyup', (event) => {
+    console.log(`Key pressed keyup: ${event.key}`);
+});
