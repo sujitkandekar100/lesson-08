@@ -9,3 +9,6 @@ runTwice(fun);
 function fun(){
     console.log(5);
 }
+setTimeout(()=>{
+    document.querySelector('.js-button-start').innerHTML='Finished!';
+},2000);
